@@ -1,0 +1,22 @@
+<!--Write a function to return the number of digits in the given number
+-->
+<html>
+    <head></head>
+    <body>
+        <script>
+            var r;
+            var s=0;
+            function abc(a){
+                while(a>0){
+                 r=a%10;
+                s=s+1
+                a=parseInt(a/10);
+                }
+                return s;
+            }
+
+            var res=abc(1234);
+            console.log(res);
+        </script>
+    </body>
+</html>

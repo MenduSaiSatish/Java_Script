@@ -1,0 +1,20 @@
+<!--Print the texts inside the h1 and h2 elements in the console.
+
+<h1 class="a">Hello</h1>
+<h2 class="a">Edupoly</h2>
+<p class="b">Training</p>
+-->
+<html>
+    <head></head>
+    <body>
+        <h1 class="a">Hello</h1>
+        <h2 class="a">Edupoly</h2>
+        <p class="b">Training</p>
+        <script>
+            var x=document.querySelectorAll(".a");
+            x.forEach(function(el){
+                console.log(el.innerHTML)
+            })
+        </script>
+    </body>
+</html>

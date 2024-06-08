@@ -1,0 +1,31 @@
+<!--change div background toggle button  -->
+<html>
+    <head>
+        <style>
+            #d1{
+                border: 1px solid;
+                width: 100px;
+                height: 100px;
+            }
+            #d2{
+                background-color: orangered;
+                border-radius: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <center><div id="d1"></div></center><br>
+        <center><button id="d2" onclick="cnt()">Toggle</button></center>
+        <script>
+            function cnt(){
+                if(document.getElementById("d1").style.backgroundColor===""){
+                document.getElementById("d1").style.backgroundColor="yellow"
+                }
+            else{
+                document.getElementById("d1").style.backgroundColor=""
+            }
+            }
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!-- diplay image using url -->
+<html>
+    <head>
+        <body>
+            <input type="text" id="d1">
+            <button onclick="addimage()">Add image</button> 
+            <div id="root"></div>
+           <script>
+            var ar=[]
+             function addimage(){
+             document.getElementById("root").innerHTML=""
+                var nimg=document.getElementById("d1")
+                ar.push(nimg.value)
+                console.log(ar)
+                genui()
+             }
+             function genui(){
+                ar.forEach(function(s){
+                var newimg=document.createElement("img")
+                newimg.src=s
+                 document.getElementById("root").appendChild(newimg)
+                })
+             }
+           </script> 
+        </body>
+    </head>
+</html>

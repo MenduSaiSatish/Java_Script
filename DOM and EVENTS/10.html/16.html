@@ -1,0 +1,39 @@
+<!--image rotation click-->
+<html>
+    <head>
+        <style>
+            #d1{
+                width: 100px;
+                height: 100px;
+                border: 1px solid;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1" onclick="btn()"></div>
+        <script>
+            var x=[ "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuWxUbEYbaUgmvLSDFRQpFohU2Ru1rnUYOCA&s",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsn0YpNgs4833-Ap2HambwOTAXgMc2LjM0xQ&s",
+                    "https://t4.ftcdn.net/jpg/05/49/63/41/360_F_549634163_42zzk2FceGNyyCkNm2glqMOge8wQnKcg.jpg"]
+                    var i=0;
+                   
+                    function btn(){
+                        var y= document.createElement("img")
+                        y.src=x[i++]
+                        if(i==x.length){
+                            i=0;
+                        }
+                        document.getElementById("d1").innerHTML=""
+                        document.getElementById("d1").appendChild(y);
+                        // console.log(s)
+                        // document.getElementById("d1").style.ChangebackgroundImage=x[i]
+                        // //console.dir(x[i])
+                        // i++;
+                    }
+        </script>
+    </body>
+</html>

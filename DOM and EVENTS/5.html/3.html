@@ -1,0 +1,16 @@
+<!-- Take an array of names and create a list from it.
+-->
+<html>
+    <head></head>
+    <body>
+        <ul id="d1"></ul>
+        <script>
+            var names=["ramesh","suresh","somesh","jithesh","mahesh"]
+            names.forEach(function(a){
+                x=document.createElement("li")
+                x.innerHTML=a;
+                document.getElementById("d1").appendChild(x)
+            })
+        </script>
+    </body>
+</html>

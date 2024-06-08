@@ -1,0 +1,37 @@
+<!--Given an object:
+                            var person = {
+                                "firstName" : "Harry",
+                                "lastName" : "Potter",
+                                "age": 30,
+                                "gender": "male",
+                                "skill" : "ReactJS",                                
+                                "expertise": "Beginner"
+                            };
+                        
+Print the firstname.
+Print the lastname.
+Print the fullname("Harry Potter").
+If the age is less than 18, then print "false". If the age is more than 18, then print "true".
+-->
+<html>
+    <head></head>
+    <body>
+        <script>
+            var person =    {
+                                "firstName" : "Harry",
+                                "lastName" : "Potter",
+                                "age": 30,
+                                "gender": "male",
+                                "skill" : "ReactJS",                                
+                                "expertise": "Beginner",
+                                "fullName":function(){
+                                    return this.firstName+" "+ this.lastName;//this refers to owner the function,this.firstname refers ti property of the object.
+                                }
+                            };
+                            console.log(person["firstName"]);
+                            console.log(person["lastName"]);
+                            console.log(person.fullName());
+                            console.log(person["age"]>=18);
+        </script>
+    </body>
+</html>

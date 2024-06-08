@@ -1,0 +1,28 @@
+<!--clor rotation on click-->
+<html>
+    <head>
+        <style>
+            #d2{
+                width: 200px;
+                height: 100px;
+                border: 1px solid;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d2" onclick="togglecolor()"></div>
+    </body>
+    <script>
+        var t=["green","red","yellow","blue","skyblue","pink"]
+        var i=0;
+        function togglecolor(){
+            document.getElementById("d2").style.backgroundColor=t[i]
+            i++;
+            
+            if(i===t.length-1){
+                i=0;
+            }
+        }
+    </script>
+</html>

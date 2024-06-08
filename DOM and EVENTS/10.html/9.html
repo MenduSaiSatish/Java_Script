@@ -1,0 +1,32 @@
+<!-- change div bg color -->
+<html>
+    <head>
+        <style>
+            #d1{
+                width: 100px;
+                height: 100px;
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <center><div id="d1" ></div></center><br>
+        <center><button id="d2" onclick="btn (event)">On</button> <button id="d3" onclick="ctn(event)">Off</button></center>
+        <script>
+            function btn(ev){
+                
+                console.dir(ev)
+                document.getElementById("d1").style.backgroundColor="yellow"
+                ev.target.style.backgroundColor="red"
+                // d2.style.backgroundColor="red"
+                document.getElementById("d3").style.backgroundColor=""
+            }
+            function ctn(av){
+                //console.dir(av)
+                document.getElementById("d1").style.backgroundColor=""
+                av.target.style.backgroundColor="orange"
+                document.getElementById("d2").style.backgroundColor=""
+            }
+        </script>
+    </body>
+</html>

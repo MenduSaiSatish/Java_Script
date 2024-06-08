@@ -1,0 +1,53 @@
+<!-- events -->
+<html>
+    <head>
+        <style>
+            #d1{
+                
+                display: flex;
+                justify-content: center;
+              
+            }
+            #d2{
+                width: 100px;
+                height: 100px; 
+                display: flex;
+               
+            }
+            #d3{
+                width: 100px;
+                height: 100px; 
+                display: inline-block;
+            }
+            #d4{
+                width: 100px;
+                height: 100px;
+                display: inline-block;   
+            }
+            #d5{
+                height: 300px;
+                width: 300px;
+                /* border: 1px solid; */
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+      <center><div id="d1">
+            <img onclick="cnt(event)" id="d2" src="https://t4.ftcdn.net/jpg/00/71/31/85/360_F_71318503_9g1UATIOZzwELZg2DZb7w4oaVyenhQkh.jpg" alt="">
+            <img onclick="cnt(event)" id="d3" src="https://www.shutterstock.com/image-photo/airplane-isolated-on-white-background-600nw-2348048513.jpg" alt="">
+            <img onclick="cnt(event)" id="d4" src="https://t4.ftcdn.net/jpg/02/11/60/75/240_F_211607578_WirpVpno9vb4IzCnw20fsZEFe5LDeW10.jpg" alt="">
+        </div>
+        </center>
+        <div id="d5"><img id="d6" src=""></div>
+        <script>
+            function cnt(ev){
+                // console.dir(ev.target)
+            document.getElementById("d6")
+            d6.style.width="100%"
+            d6.src=ev.target.src
+            }
+        </script>
+
+    </body>
+</html>

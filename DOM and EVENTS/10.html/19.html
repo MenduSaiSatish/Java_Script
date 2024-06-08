@@ -1,0 +1,88 @@
+<!-- Add contact cards -->
+<html>
+    <head></head>
+    <body>
+        <center>
+            <form onsubmit="showdata(event)">
+                <h1>Add contact cards</h1>
+                 Name <input type="text" onkeyup="updatename(event)" id="d1"><br><br>
+                 Number <input type="number" onkeyup="updatenum(event)" id="d2"><br><br>
+                 Email <input type="email" onkeyup="updateemail(event)" id="d3"><br><br>
+                 URL <input type="url" onkeyup="updateimg(event)" id="d4"><br><br>
+                 <button type="submit" id="d5">Add Contact</button><br><br>
+                 <div id="d6"></div>
+            </form>
+        </center>
+        <script>
+            var ar=[];
+            var name='';
+            var number='';
+            var email='';
+            var img='';
+            function updatename(ev){
+                name=ev.target.value;
+            }
+            function updatenum(ev){
+               number= ev.target.value;
+            }
+            function updateemail(ev){
+                email=ev.target.value;
+            }
+            function updateimg(ev){
+                img=ev.target.value;
+            }
+            function showdata(ev){
+                ev.preventDefault()
+                var students={
+                    name:name,
+                    number:number,
+                    email:email,
+                    img:img,
+                }
+                ar.push(students)
+                //console.log(ar)
+                data()
+            }
+            function data(){
+                document.getElementById("d6").innerHTML=""
+                ar.forEach(function(a){
+                    var nd=document.createElement("div")
+                    nd.style.backgroundColor="pink";
+                    nd.style.height="150px";
+                    nd.style.width="200px";
+                    nd.color="white";
+                    nd.border="1px solid";
+                    nd.style.paddingRight="30px"
+
+                    var nul=document.createElement("ul")
+                    nd.appendChild(nul)
+
+                    var nimg=document.createElement("img")
+                    nimg.src=a.img;
+                    nimg.style.borderRadius="10px";
+                    nimg.style.height="50px";
+                    nimg.style.width="40px;"
+                    nimg.style.margin="5px "
+                    nul.appendChild(nimg)
+
+                    var nam=document.createElement("li")
+                    nam.innerHTML=a.name;
+                    nam.style.listStyle="none";
+                    nul.appendChild(nam)
+
+                    var num=document.createElement("li")
+                    num.innerHTML=a.number;
+                    num.style.listStyle="none";
+                    nul.appendChild(num)
+
+                    var nem=document.createElement("li")
+                    nem.innerHTML=a.email;
+                    nem.style.listStyle="none"
+                    nul.appendChild(nem)
+
+                    document.getElementById("d6").appendChild(nd)
+                })
+            }
+        </script>
+    </body>
+</html>

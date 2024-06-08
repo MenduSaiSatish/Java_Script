@@ -1,0 +1,44 @@
+<!--likes and dislikes counter  -->
+<html>
+    <head>
+        <style>
+            #d1{
+                background-color:green;
+                margin: 20px;
+                border-radius: 5px;
+            }
+            #d2{
+                background-color: red;
+                color: white;
+                border-radius: 5px;
+            }
+            #d3{
+                color: red;
+            }
+            #d4{
+                color: red;
+                padding-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+      <center><button id="d1" onclick="inc()">Like</button><span id="d3"></span></center><br><br> 
+      <center><button id="d2" onclick="dnc()">Dislike</button><span id="d4"></span></center> 
+      <script>
+        var count=0;
+        document.getElementById("d3").innerHTML=count
+        function inc(){
+            document.getElementById("d3").innerHTML=count
+            count++;
+            document.getElementById("d3").innerHTML=count
+        }
+        var s=0;
+        document.getElementById("d4").innerHTML=s
+        function dnc(){
+            document.getElementById("d4").innerHTML=s
+            s++;
+            document.getElementById("d4").innerHTML=s
+        }
+      </script>
+    </body>
+</html>

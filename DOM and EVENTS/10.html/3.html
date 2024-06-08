@@ -1,0 +1,27 @@
+<!-- change button background color on click -->
+<html>
+    <head>
+        <style>
+            #d2{
+                width: 200px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="d2" onclick="color()">white</button>
+    </body>
+    <script>
+        function color(){
+        if(document.getElementById("d2").style.backgroundColor===""){
+            document.getElementById("d2").style.backgroundColor="green"
+            d2.innerHTML="green"
+        }
+        else{
+            document.getElementById("d2").style.backgroundColor=""
+            d2.innerHTML="white"
+        }
+    }
+          
+    </script>
+</html>

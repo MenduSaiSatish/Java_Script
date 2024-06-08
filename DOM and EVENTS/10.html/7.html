@@ -1,0 +1,32 @@
+<!--toggle button div-->
+<html>
+    <head>
+        <style>
+            #d1{
+                border: 1px solid;
+                width: 200px;
+                height:200px;
+                text-align: center;
+                padding: 10px;
+                font-size:40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1">
+            Its nothing 
+        </div><br>
+        <button id="d3" onclick="btn()">True/False</button>
+        <script>
+           function btn(){
+            if(document.getElementById("d1").innerHTML==="true"){
+            d1.innerHTML="false"
+            }
+            else{
+                document.getElementById("d1").innerHTML==="false"
+                d1.innerHTML="true"
+            }
+           }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!--Print all strong numbers between the given interval using functions.
+-->
+<html>
+    <head></head>
+    <body>
+        <script>
+            function fact(a){
+                var r;
+                var s=0;
+                while(a>0){
+                    var f=1;
+                    r=a%10;
+                    for(var i=1;i<=r;i++){
+                       f=f*i;
+                    }
+                     s=s+f;
+                    a=parseInt(a/10)
+                }
+                return s;
+            }
+            var res=fact(24)
+                console.log(res);
+        </script>
+    </body>
+</html>

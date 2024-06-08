@@ -1,0 +1,43 @@
+<!--toggle bulb on off-->
+<html>
+    <head>
+        <style>
+            #d2{
+                width: 100px;
+                height: 100px;
+            }
+            #d3{
+                width: 100px;
+                height: 100px;
+                display: none;
+            }
+            #d1{
+                background-color: yellow;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <center><img id="d2" src="https://p.turbosquid.com/ts-thumb/C9/6npaxY/pyTUIDEq/logo/png/1583869024/1920x1080/fit_q87/bbea966bc314cb5cec8fb9f35c44330e5ff0666f/logo.jpg" alt="">
+            <img  id="d3"src="https://previews.123rf.com/images/yukipon/yukipon1202/yukipon120200008/12321081-light-bulb.jpg" alt="">
+        </center><br>
+        <center><button onclick="cnt ()" id="d1">On</button></center>
+        <script>
+            function cnt(){
+                if(document.getElementById("d1").style.backgroundColor===""){
+                    document.getElementById("d1").style.backgroundColor="yellow"
+                    d1.innerHTML="On"
+                    document.getElementById("d2").style.display="block"
+                    document.getElementById("d3").style.display="none"
+
+                }
+                else{
+                    document.getElementById("d1").style.backgroundColor=""
+                    d1.innerHTML="Off"
+                    document.getElementById("d2").style.display="none"
+                    document.getElementById("d3").style.display="block"  
+                }
+            }
+        </script>
+    </body>
+</html>

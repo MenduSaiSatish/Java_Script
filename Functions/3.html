@@ -1,0 +1,47 @@
+<!--Write a function which can print the given arguments in ascending order.
+                            
+                            function sortNums(a,b,c){
+                            …………………
+                            }
+                            var ascending = sortNums(45,7,68);
+                            console.log(ascending);//-->
+
+<html>
+    <head></head>
+    <body>
+        <script>
+            function sortNums(a,b,c){
+                if(a<b && a<c){
+                    if(b<c){
+                        console.log(a,b,c);
+                        //return
+                    }
+                    else{
+                        console.log(a,c,b);
+                    }
+                }
+                else if(b<c && b<a){
+                    if(a<c){
+                        console.log(b,a,c);
+                    }
+                    else{
+                        console.log(b,c,a);
+                    }
+                }
+                else{
+                    if(a<b){
+                        console.log(c,a,b);
+                    }
+                    else{
+                        console.log(c,b,a);
+                    }
+                    
+                }
+                //var x = [1,0,9];
+                //return x;
+        }
+            var ascendng = sortNums(45,7,68);
+            console.log(ascendng);
+        </script>
+    </body>
+</html>

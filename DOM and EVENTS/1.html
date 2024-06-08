@@ -1,0 +1,24 @@
+<!--Given an h1 element:
+
+<h1>Hello World</h1>
+a)Print the text inside the h1 element in the console.
+b)Print the data type of the text inside the h1.
+c)Print the text inside the h1 in uppercase in the console.
+d)Change the text of the h1 to "Welcome to Edupoly".
+-->
+<html>
+    <head></head>
+    <body>
+        <h1>Hello World</h1>
+        <script>
+           var x=document.querySelector("h1")
+           console.log(x.innerHTML) 
+
+           console.log(typeof x.innerHTML)
+
+           console.log(x.innerHTML.toUpperCase())
+
+           x.innerHTML="Welcome to Edupoly"
+        </script>
+    </body>
+</html>

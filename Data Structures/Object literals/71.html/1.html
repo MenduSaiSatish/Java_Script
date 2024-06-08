@@ -1,0 +1,20 @@
+<!--Object.assign()-->
+<html>
+    <head></head>
+    <body>
+        <script>
+            var obj1 = {
+                         "name": "Edupoly",
+                         "location": "Hyderabad"
+                        }
+             var obj2 = {
+                         "employees": 10,
+                         "type": "Training Institute"
+                         }
+            Object.assign(obj1,obj2);
+            var text = Object.entries(obj1);
+            document.getElementById("demo").innerHTML=text;
+
+        </script>
+    </body>
+</html>

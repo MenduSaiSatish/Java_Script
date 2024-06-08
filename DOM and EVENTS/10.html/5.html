@@ -1,0 +1,28 @@
+<!-- botton toggle boolean value -->
+<html>
+    <head>
+        <style>
+            #d2{
+                background-color: orange;
+                border: 1px;
+            }
+            #d3{
+                border: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <center><button id="d2" onclick="cnt()">Toggle</button><span id="d3"></span></center>
+        <script>
+            function cnt(){
+                if(document.getElementById("d3").innerHTML==="true"){
+                d3.innerHTML="false"
+                }
+            else{
+                document.getElementById("d3").innerHTML==="false"
+                d3.innerHTML="true"
+            }
+            }
+        </script>
+    </body>
+</html>

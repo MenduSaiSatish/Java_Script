@@ -1,0 +1,22 @@
+<!--Write a function which can check a given number is armstrong number or not
+-->
+<html>
+    <head></head>
+    <body>
+        <script>
+            var s=0;
+            var r;
+            function arm(a){
+                var c=a.length;
+                while(a>0){
+                    r=a%10;
+                    s=s+r**c;
+                    a=parseInt(a/10);
+                }
+                return s;
+            }
+            var res=arm("1634");
+            console.log(res);
+        </script>
+    </body>
+</html>

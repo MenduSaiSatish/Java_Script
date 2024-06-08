@@ -1,0 +1,31 @@
+<!--Take an array of image urls and display the images in browser.
+-->
+<html>
+    <head></head>
+    <body>
+        <div id="e1"></div>
+        <script>
+            var pics=[
+                "https://img.freepik.com/free-photo/weather-effects-composition_23-2149853295.jpg?size=626&ext=jpg",
+                "https://img.freepik.com/free-photo/green-leaf-with-water-droplets-it-is-covered-with-raindrops_1340-42441.jpg?size=626&ext=jpg",
+                "https://img.freepik.com/premium-photo/cityscape-window-raindrops-city-window-raindrops-urban-raindrops_547280-10486.jpg?size=626&ext=jpg"
+            ]
+            pics.forEach(function(a){
+                var pimg=document.createElement("img")
+                var di=document.createElement("div")
+                pimg.src=a;
+                // e1.style.display="flex";
+                // pimg.style.width="300px";
+                // pimg.style.padding="10px"
+                //e1.style.width="50px";
+                di.appendChild(pimg)
+                pimg.style.padding="10px";
+                di.style.display="inline-block";
+                pimg.style.width="100px";
+                // di.style.height="20%";
+                //document.getElementById("e1").appendChild(pimg)
+                document.body.appendChild(di)
+            })
+        </script>
+    </body>
+</html>

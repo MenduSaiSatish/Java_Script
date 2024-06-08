@@ -1,0 +1,22 @@
+<!--a program to read 5 numbers and print the maximum and minimum number
+-->
+<html>
+    <head></head>
+    <body>
+        <script>
+            var max=-Infinity;
+            var min=+Infinity;
+            for(i=1;i<=5;i++){
+                var x=+prompt();
+                if(x>max){
+                    max=x
+                }
+                if(x<min){
+                    min=x
+                }
+            }
+            console.log(max);
+            console.log(min);
+        </script>
+    </body>
+</html>

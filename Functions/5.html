@@ -1,0 +1,26 @@
+<!--Write a function which can to return the reverse of a given number.
+                            function rev(a){
+                            …………………
+                            }
+                            var reverse = rev(4);
+                            console.log(reverse);
+-->
+<html>
+    <head></head>
+    <body>
+        <script>
+           function rev(a){
+            var s=0;
+            var r;
+            while(a>0){
+                r=a%10;
+                s=s*10+r;
+                a=parseInt(a/10);
+            }
+            return s;
+           } 
+           var reverse= rev(1234);
+           console.log(reverse);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!--add text-->
+<html>
+    <head>
+        <style>
+            #d2{
+                background-color: orangered;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <center>
+            <input type="text" id="d1">
+            <button id="d2" onclick="add(event)">Add Student</button>
+        </center>
+        <ul id="d"></ul>
+        <!-- <center><div id="d3"></div></center> -->
+        
+        <script>
+         
+            var x=document.getElementById('d1');
+            var y=document.getElementById('d');
+            var tasks=[];
+            function add(){
+                y.innerHTML='';
+                tasks.push(x.value);
+                tasks.forEach(function(a){
+                    var nli=document.createElement('li');
+                    nli.innerHTML=a;
+                    y.appendChild(nli)
+
+                })
+
+            }
+           
+        </script>
+    </body>
+</html>
